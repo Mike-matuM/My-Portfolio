@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Portfolio - Digital Designer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#6366f1',
+secondary: '#f472b6'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.filter-active { background-color: #6366f1; color: white; }
+.project-card { transition: all 0.3s ease; }
+.project-card:hover { transform: translateY(-8px); }
+.skill-bar { transition: width 1s ease-in-out; }
+</style>
+</head>
+<body class="bg-white font-['Inter']">
+<nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16 items-center">
+<a href="#" class="font-['Pacifico'] text-2xl text-primary">logo</a>
+<div class="hidden md:flex space-x-8">
+<a href="#home" class="text-gray-700 hover:text-primary">Home</a>
+<a href="#projects" class="text-gray-700 hover:text-primary">Projects</a>
+<a href="#about" class="text-gray-700 hover:text-primary">About</a>
+<a href="#contact" class="text-gray-700 hover:text-primary">Contact</a>
+</div>
+<button class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</div>
+</nav>
+<header id="home" class="pt-24 pb-16 relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h1 class="text-5xl font-bold mb-6">Creative Digital Designer</h1>
+<p class="text-xl text-gray-600 mb-8">Crafting immersive digital experiences through 3D design, UI/UX, and creative artistry</p>
+<div class="flex gap-4">
+<a href="#projects" class="bg-primary text-white px-8 py-3 !rounded-button whitespace-nowrap hover:bg-primary/90">View Projects</a>
+<a href="#contact" class="border border-primary text-primary px-8 py-3 !rounded-button whitespace-nowrap hover:bg-primary/5">Contact Me</a>
+</div>
+</div>
+<div class="flex-1">
+<img src="https://public.readdy.ai/ai/img_res/4c99d899c6ea1f462657866fa1dbdfec.jpg" alt="Hero Image" class="w-full rounded-2xl shadow-2xl">
+</div>
+</div>
+</div>
+</header>
+<section id="skills" class="py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center mb-12">My Expertise</h2>
+<div class="space-y-24">
+  <!-- 3D Design -->
+  <div class="flex flex-col md:flex-row items-center gap-12">
+    <div class="flex-1">
+      <h3 class="text-2xl font-bold mb-4">3D Design & Visualization</h3>
+      <p class="text-gray-600 mb-6">Specializing in creating photorealistic 3D renders and product visualizations using industry-leading software. From concept to final render, I bring ideas to life with attention to detail and artistic flair.</p>
+      <ul class="space-y-3">
+        <li class="flex items-center gap-2">
+          <i class="ri-check-line text-primary"></i>
+          <span>Photorealistic Product Rendering</span>
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="ri-check-line text-primary"></i>
+          <span>Architectural Visualization</span>
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="ri-check-line text-primary"></i>
+          <span>Character Modeling & Animation</span>
+        </li>
+      </ul>
+    </div>
+    <div class="flex-1">
+      <img src="https://public.readdy.ai/ai/img_res/efd2e5f2ecb506b2679ea61487f35abf.jpg" alt="3D Design Example" class="rounded-xl shadow-xl">
+    </div>
+  </div>
+  <!-- UI/UX Design -->
+  <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+    <div class="flex-1">
+      <h3 class="text-2xl font-bold mb-4">UI/UX Design</h3>
+      <p class="text-gray-600 mb-6">Creating intuitive and engaging user experiences through thoughtful interface design. I combine aesthetics with functionality to deliver memorable digital products.</p>
+      <ul class="space-y-3">
+        <li class="flex items-center gap-2">
+          <i class="ri-check-line text-primary"></i>
+          <span>User Interface Design</span>
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="ri-check-line text-primary"></i>
+          <span>Interaction Design</span>
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="ri-check-line text-primary"></i>
+          <span>Prototyping & User Testing</span>
+        </li>
+      </ul>
+    </div>
+    <div class="flex-1">
+      <img src="https://public.readdy.ai/ai/img_res/9ea56cf5cc6e12cb50a07291ff9b9db0.jpg" alt="UI/UX Design Example" class="rounded-xl shadow-xl">
+    </div>
+  </div>
+  <!-- Digital Art -->
+  <div class="flex flex-col md:flex-row items-center gap-12">
+    <div class="flex-1">
+      <h3 class="text-2xl font-bold mb-4">Digital Art & Illustration</h3>
+      <p class="text-gray-600 mb-6">Transforming ideas into captivating digital artwork. My illustrations combine creativity with technical expertise to tell compelling visual stories.</p>
+      <ul class="space-y-3">
+        <li class="flex items-center gap-2">
+          <i class="ri-check-line text-primary"></i>
+          <span>Digital Illustration</span>
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="ri-check-line text-primary"></i>
+          <span>Brand Illustration</span>
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="ri-check-line text-primary"></i>
+          <span>Editorial Artwork</span>
+        </li>
+      </ul>
+    </div>
+    <div class="flex-1">
+      <img src="https://public.readdy.ai/ai/img_res/3eb5aedb775f97881c6f31bee1b956e2.jpg" alt="Digital Art Example" class="rounded-xl shadow-xl">
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<section id="projects" class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+<div class="flex justify-center gap-4 mb-12">
+<button class="px-6 py-2 !rounded-button filter-active" data-filter="all">All</button>
+<button class="px-6 py-2 !rounded-button" data-filter="3d">3D Design</button>
+<button class="px-6 py-2 !rounded-button" data-filter="ui">UI/UX</button>
+<button class="px-6 py-2 !rounded-button" data-filter="digital">Digital Art</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="project-card bg-white rounded-xl shadow-lg overflow-hidden" data-category="3d">
+<img src="https://public.readdy.ai/ai/img_res/79ea63f88c6ddcbee97d9cd89a79daae.jpg" alt="3D Design Project" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Modern Product Visualization</h3>
+<p class="text-gray-600 mb-4">3D rendering and product visualization for modern furniture collection</p>
+<div class="flex gap-2">
+<span class="text-xs bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Blender</span>
+<span class="text-xs bg-purple-100 text-purple-800 px-3 py-1 rounded-full">Cinema 4D</span>
+</div>
+</div>
+</div>
+<div class="project-card bg-white rounded-xl shadow-lg overflow-hidden" data-category="ui">
+<img src="https://public.readdy.ai/ai/img_res/c943043627d07cb91a5f8b8bf6c07fd0.jpg" alt="UI Design Project" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Mobile App Design</h3>
+<p class="text-gray-600 mb-4">Complete UI/UX design for a fitness tracking application</p>
+<div class="flex gap-2">
+<span class="text-xs bg-pink-100 text-pink-800 px-3 py-1 rounded-full">Figma</span>
+<span class="text-xs bg-orange-100 text-orange-800 px-3 py-1 rounded-full">Prototyping</span>
+</div>
+</div>
+</div>
+<div class="project-card bg-white rounded-xl shadow-lg overflow-hidden" data-category="digital">
+<img src="https://public.readdy.ai/ai/img_res/e83bc3940335b4024299e7a7a08bf471.jpg" alt="Digital Art Project" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Digital Artwork Series</h3>
+<p class="text-gray-600 mb-4">Collection of digital illustrations for brand campaign</p>
+<div class="flex gap-2">
+<span class="text-xs bg-green-100 text-green-800 px-3 py-1 rounded-full">Photoshop</span>
+<span class="text-xs bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">Illustration</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center mb-12">Let's Work Together</h2>
+<div class="max-w-2xl mx-auto">
+<form id="contactForm" class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+<input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" required>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+<input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" required>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+<textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" required></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+<footer class="bg-gray-900 text-white py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<a href="#" class="font-['Pacifico'] text-2xl text-white mb-4 block">logo</a>
+<p class="text-gray-400">Creating meaningful digital experiences through innovative design solutions.</p>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+<li><a href="#projects" class="text-gray-400 hover:text-white">Projects</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Connect</h3>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary">
+<i class="ri-dribbble-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary">
+<i class="ri-behance-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary">
+<i class="ri-linkedin-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center">
+<p class="text-gray-400">&copy; 2025 All rights reserved.</p>
+</div>
+</div>
+</footer>
+<button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 transition-opacity duration-300">
+<i class="ri-arrow-up-line"></i>
+</button>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const filterButtons = document.querySelectorAll('[data-filter]');
+const projectCards = document.querySelectorAll('.project-card');
+const backToTop = document.getElementById('backToTop');
+const contactForm = document.getElementById('contactForm');
+filterButtons.forEach(button => {
+button.addEventListener('click', () => {
+const filter = button.dataset.filter;
+filterButtons.forEach(btn => btn.classList.remove('filter-active'));
+button.classList.add('filter-active');
+projectCards.forEach(card => {
+if (filter === 'all' || card.dataset.category === filter) {
+card.style.display = 'block';
+} else {
+card.style.display = 'none';
+}
+});
+});
+});
+window.addEventListener('scroll', () => {
+if (window.pageYOffset > 300) {
+backToTop.style.opacity = '1';
+} else {
+backToTop.style.opacity = '0';
+}
+});
+backToTop.addEventListener('click', () => {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+contactForm.addEventListener('submit', (e) => {
+e.preventDefault();
+const formData = new FormData(contactForm);
+const data = Object.fromEntries(formData);
+const successMessage = document.createElement('div');
+successMessage.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg';
+successMessage.textContent = 'Message sent successfully!';
+document.body.appendChild(successMessage);
+setTimeout(() => {
+successMessage.remove();
+}, 3000);
+contactForm.reset();
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior: 'smooth'
+});
+});
+});
+});
+</script>
+</body>
+</html>
